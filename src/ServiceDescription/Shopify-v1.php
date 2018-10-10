@@ -1944,6 +1944,25 @@ return [
 
         /**
          * --------------------------------------------------------------------------------
+         * COLLECT RELATED METHODS
+         *
+         * DOC: https://help.shopify.com/en/api/reference/products/collect
+         * --------------------------------------------------------------------------------
+         */
+
+        'GetCollects' => [
+            'httpMethod'           => 'GET',
+            'uri'                  => 'admin/collects.json',
+            'responseModel'        => 'GenericModel',
+            'summary'              => 'Retrieve a list of collects',
+            'data'                 => ['root_key' => 'collects'],
+            'additionalParameters' => [
+                'location' => 'query',
+            ],
+        ],
+
+        /**
+         * --------------------------------------------------------------------------------
          * THEME RELATED METHODS
          *
          * DOC: https://docs.shopify.com/api/theme
